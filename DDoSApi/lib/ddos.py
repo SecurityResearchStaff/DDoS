@@ -11,8 +11,6 @@ import logging.handlers
 from commands import getstatusoutput
 
 class DDoSAttack(object):
-	''' DDoSAttack '''
-	
 	def __init__(self, host, port, times):
 		self._host = host
 		self._port = port
