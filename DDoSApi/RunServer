@@ -1,0 +1,11 @@
+#!/bin/bash
+
+source /etc/init.d/functions
+
+if [[ 1 -eq `ps aux | grep 'server.py 8080' | grep -c -v grep` ]] && [[ 0 -eq `netstat -plant | grep ':8080' | grep -c -v '0.0.0.0:'` ]]; then
+    ps aux | grep 'server.py 8080' | grep -v grep | awk '{print $2}' | xargs kill
+else
+    cd /opt/DDoSApi/ && daemon --user root "nohup /usr/bin/python server.py 8080 > logs/access.log 2>&1 &"
+fi
+
+
