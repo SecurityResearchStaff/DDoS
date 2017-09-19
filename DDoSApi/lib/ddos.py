@@ -22,8 +22,6 @@ class DDoSAttack(object):
 		if not self._logger.handlers:
 		    self._logger.addHandler(handler)
 		self._logger.setLevel(logging.DEBUG)
-
-
 		self._params = {
 			'ProcessPath' :	'/opt/DDoSAttack/',
 			'AmpListPath' : '/opt/DDoSAttack/AmpList/',
