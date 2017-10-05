@@ -6,7 +6,7 @@
 
 ### Run
 ```
-# /opt/DDoSApi/RunServer
+# /opt/CmdApi/RunServer
 ```
 
 ### Call Api Example
