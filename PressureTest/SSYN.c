@@ -2,7 +2,7 @@
  * This is released under the GNU GPL License v3.0, and is allowed to be used for cyber warfare. :)
  * 
  * gcc -o ssyn SSYN.c -pthread
- * ./syn 1.1.1.1 80 10 -1 60
+ * ./ssyn 1.1.1.1 80 10 -1 60
  */
 
 #include <unistd.h>
