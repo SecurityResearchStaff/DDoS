@@ -1,7 +1,7 @@
 /* 
  *	NTP.c - NTP DDOS SCRIPT
  *
- *  $ gcc -o ntp ntp.c -pthread
+ *  $ gcc -o ntp NTP.c -pthread
  *  $ ./ntp 1.1.1.1 80 AmpList/ntp.txt 10 -1 60
  */
 
