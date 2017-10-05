@@ -63,9 +63,9 @@ unsigned long int rand_cmwc(void)
 unsigned short csum(unsigned short *buf, int count)
 {
 	register unsigned long sum = 0;
-	while( count > 1 ) { sum += *buf++; count -= 2; }
-	if(count > 0) { sum += *(unsigned char *)buf; }
-	while (sum>>16) { sum = (sum & 0xffff) + (sum >> 16); }
+	while (count > 1) { sum += *buf++; count -= 2; }
+	if (count > 0) { sum += *(unsigned char *)buf; }
+	while (sum >> 16) { sum = (sum & 0xffff) + (sum >> 16); }
 	return (unsigned short)(~sum);
 }
 
@@ -177,7 +177,7 @@ void *flood(void *par1)
 	}
 }
 
-int main(int argc, char *argv[ ])
+int main(int argc, char *argv[])
 {
 	if (argc < 6) 
 	{
